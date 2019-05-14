@@ -128,8 +128,8 @@ extension MenuViewController:UICollectionViewDataSource, UICollectionViewDelegat
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     print(indexPath.item)
     
-    //let pizzaViewController = PizzaViewController()
-    //present(pizzaViewController, animated: true, completion: nil)
+    let pizzaVC = PizzaViewController()
+    self.navigationController?.pushViewController(pizzaVC, animated: true)
     
   }
   

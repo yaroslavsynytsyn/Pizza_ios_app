@@ -15,6 +15,7 @@
 		C4B2D8EC228AA02F0040BB5A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D8EB228AA02F0040BB5A /* MenuViewController.swift */; };
 		C4B2D8EE228AAE330040BB5A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D8ED228AAE330040BB5A /* MenuCell.swift */; };
 		C4B2D8F0228AB2E00040BB5A /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D8EF228AB2E00040BB5A /* MenuModel.swift */; };
+		C4B2D8F3228AB77D0040BB5A /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D8F2228AB77D0040BB5A /* PizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C4B2D8EB228AA02F0040BB5A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C4B2D8ED228AAE330040BB5A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C4B2D8EF228AB2E00040BB5A /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		C4B2D8F2228AB77D0040BB5A /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		C4B2D8D3228984DE0040BB5A /* Pizza_ios_app */ = {
 			isa = PBXGroup;
 			children = (
+				C4B2D8F1228AB73D0040BB5A /* Pizza */,
 				C4B2D8EA228A9FE40040BB5A /* Menu */,
 				C4B2D8E9228995EA0040BB5A /* Home */,
 				C4B2D8E62289946C0040BB5A /* Application */,
@@ -103,6 +106,14 @@
 				C4B2D8EF228AB2E00040BB5A /* MenuModel.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		C4B2D8F1228AB73D0040BB5A /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2D8F2228AB77D0040BB5A /* PizzaViewController.swift */,
+			);
+			path = Pizza;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				C4B2D8F0228AB2E00040BB5A /* MenuModel.swift in Sources */,
 				C4B2D8EE228AAE330040BB5A /* MenuCell.swift in Sources */,
 				C4B2D8D5228984DE0040BB5A /* AppDelegate.swift in Sources */,
+				C4B2D8F3228AB77D0040BB5A /* PizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

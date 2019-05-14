@@ -8,7 +8,23 @@
 
 import UIKit
 
-class MenuCell: UICollectionViewCell {
+
+class BaseCell: UICollectionViewCell{
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    setupViews()
+  }
+  
+  func setupViews() {}
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+}
+
+class MenuCell: BaseCell {
   
   var view = UIView()
   
@@ -41,18 +57,7 @@ class MenuCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  var menu:Menu? {
-    didSet {
-      lableName.text = menu?.name
-      imageView.image = UIImage(named: menu!.imageName!)
-    }
-  }
-  
-}
-
-extension MenuCell {
-  
-  func setupViews() {
+  override func setupViews() {
     
     //MARK view
     view = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
@@ -70,7 +75,17 @@ extension MenuCell {
     view.addSubview(lableName)
     lableName.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
     lableName.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
+    
   }
   
+  var menu:Menu? {
+    didSet {
+      lableName.text = menu?.name
+      imageView.image = UIImage(named: menu!.imageName!)
+    }
+  } 
+  
 }
+
+
 
