@@ -12,6 +12,7 @@
 		C4B2D8DA228984DE0040BB5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B2D8D8228984DE0040BB5A /* Main.storyboard */; };
 		C4B2D8DC228984E10040BB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B2D8DB228984E10040BB5A /* Assets.xcassets */; };
 		C4B2D8DF228984E10040BB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B2D8DD228984E10040BB5A /* LaunchScreen.storyboard */; };
+		C4B2D8EC228AA02F0040BB5A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D8EB228AA02F0040BB5A /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4B2D8DB228984E10040BB5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B2D8DE228984E10040BB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4B2D8E0228984E10040BB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B2D8EB228AA02F0040BB5A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		C4B2D8D3228984DE0040BB5A /* Pizza_ios_app */ = {
 			isa = PBXGroup;
 			children = (
+				C4B2D8EA228A9FE40040BB5A /* Menu */,
 				C4B2D8E9228995EA0040BB5A /* Home */,
 				C4B2D8E62289946C0040BB5A /* Application */,
 				C4B2D8E8228995830040BB5A /* Supporting files */,
@@ -86,6 +89,14 @@
 				C4B2D8D6228984DE0040BB5A /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C4B2D8EA228A9FE40040BB5A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2D8EB228AA02F0040BB5A /* MenuViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B2D8D7228984DE0040BB5A /* HomeViewController.swift in Sources */,
+				C4B2D8EC228AA02F0040BB5A /* MenuViewController.swift in Sources */,
 				C4B2D8D5228984DE0040BB5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -51,7 +51,6 @@ class HomeViewController: UIViewController {
     button.layer.borderWidth = 1.0
     button.layer.cornerRadius = CGFloat(startButtonWidth) / 2
     button.backgroundColor = UIColor(red: 229/255, green: 41/255, blue: 62/255, alpha: 1.0)
-    //button.titleLabel?.textAlignment = .center
     button.setImage(UIImage(named: "arrow"), for: .normal)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.addTarget(self, action: #selector(didTapOnSeeAllButton), for: .touchUpInside)
@@ -60,13 +59,26 @@ class HomeViewController: UIViewController {
   
   //MARK tap on button start order
   @objc func didTapOnSeeAllButton() {
+    // create MenuViewController object and
+    let menuVC = MenuViewController()
     
+    // switch to MenuViewController
+    self.navigationController?.pushViewController(menuVC, animated: true)
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupView()
+  }
+  
+  // disable navigationbar in HomeViewController
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    navigationController!.navigationBar.shadowImage = UIImage()
+    navigationController!.navigationBar.isTranslucent = true
   }
 
 }
@@ -100,7 +112,7 @@ extension HomeViewController {
     view.addSubview(startOrderButton)
     
     startOrderButton.leftAnchor.constraint(equalTo: cheezaPizzaLable.leftAnchor).isActive = true
-    startOrderButton.topAnchor.constraint(equalTo: cheezaPizzaLable.bottomAnchor, constant: 10).isActive = true
+    startOrderButton.topAnchor.constraint(equalTo: cheezaPizzaLable.bottomAnchor, constant: 5).isActive = true
     startOrderButton.widthAnchor.constraint(equalToConstant: cheezaPizzaLable.intrinsicContentSize.width).isActive = true
     startOrderButton.heightAnchor.constraint(equalToConstant: cheezaPizzaLable.intrinsicContentSize.height).isActive = true
   
